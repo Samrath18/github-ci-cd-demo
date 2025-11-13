@@ -7,7 +7,7 @@ def generate_html(result):
       <head><title>GitHub CI/CD Demo</title></head>
       <body style='font-family:Arial; text-align:center; margin-top:50px;'>
         <h1>🚀 GitHub CI/CD Demo</h1>
-        <p>The result of add(10, 5) is: <strong>{result}</strong></p>
+        <p>The result of add(4, 6) is: <strong>{result}</strong></p>
         <p>✅ Build and deployment were successful!</p>
       </body>
     </html>
@@ -16,6 +16,6 @@ def generate_html(result):
         f.write(html_content)
 
 if __name__ == "__main__":
-    result = add(10, 5)
+    result = add(4, 6)
     print(f"The result is {result}")
     generate_html(result)
